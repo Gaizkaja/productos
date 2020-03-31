@@ -12,7 +12,24 @@ public class Producto {
 	private String made_in; //Name del estado
 	private Double precio;
 	private int descuento;
-	private String tallas; //tallas separados por coma ej.: S,L
+	private String tallas; //tallas separados por coma ej.: S,L	
+
+	public Producto() {
+		super();
+	}
+
+	public Producto(int id, String nombre, int stock, Date fecha_compra, String color, String made_in, Double precio,
+			int descuento) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.stock = stock;
+		this.fecha_compra = fecha_compra;
+		this.color = color;
+		this.made_in = made_in;
+		this.precio = precio;
+		this.descuento = descuento;
+	}
 	
 	public int getId() {
 		return id;
